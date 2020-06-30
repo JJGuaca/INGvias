@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Consulta | Login</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/inicio.css">
+  </head>
+
+  <body>
+    <!--Menu de navegación-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+          <img src="../img/logo.png" alt="">
+        </a>  
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="margin-top: 19px; font-size: 215%;">Panel</a>
+        </div>
+       <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!--header -->
+    <header id="header">
+      <header class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 style="font-size: 20px;margin-top: 10px;" class="text-center">Administración | <span class="glyphicon glyphicon-lock" area-hiden="true"></span><small> Acceso Usuario</small></h1>
+          </div>
+        </div>
+      </header>
+    </header>
+    <section id="main">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4 col-md-offset-4">
+    				<form id="login" class="well" onsubmit="return false" action="return false">
+            <div class="form-group">
+              <select class="form-control" required name="user">
+                <!--<option></option>
+                <option value="admin">Administrador</option>-->
+                <option value="evaluador">Evaluador</option>
+                <option value="jefe">Jefe</option>
+              </select>
+            </div>
+					  <div class="form-group">
+					    <label>Nombre de Usuario</label>
+					    <input type="text" class="form-control" name="username" placeholder="Ingrese e-mail" required>
+					  </div>
+					  <div class="form-group">
+					    <label>Credenciales</label>
+					    <input type="password" class="form-control" name="password" placeholder="Credenciales" required>
+					  </div>
+					  <button type="submit" class="btn btn-primary btn-block" onclick="iniciar();">Ingresar</button>
+					</form>
+					<div id="respuesta"></div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+     <!--footer-->
+    <footer id="footer">
+      <p>Derechos Registrados Consulta de panel jj, &copy; 2020</p>      
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/inicio.js"></script>
+  </body>
+</html>
+	
+<!--	<header>
+		<nav>
+			<h2>Bienvenido</h2>
+		</nav>
+	</header>
+	<div id="contenedor">
+		<div id="inscribir">
+			<section id="wigget">
+				<h4>Ingresa tus datos</h4>
+				<form name="consulta" onsubmit="return false" action="return false" id="formu">
+					<input type="text" name="username" id="username" placeholder="Digita Usuario" autocomplete="off" required>
+					<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>					
+					<button onclick="iniciar();">LogIn</button>
+
+					<br style="clear:both;">
+				</form>
+				<div id="respuesta"></div>	
+			</section>
+		</div>
+	</div>-->

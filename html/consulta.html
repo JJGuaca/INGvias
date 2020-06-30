@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Consulta</title>
+	<link rel="stylesheet" type="text/css" href="../css/inicio.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="../js/inicio.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<h2>Esta en pagina de consulta</h2>
+		</nav>
+	</header>
+	<div id="contenedor">
+		<div id="inscribir">
+		<section>
+				<h4>Ingresa los datos Consultar</h4>
+				<form name="consulta" onsubmit="return false" action="return false" id="formu2">
+					<input type="text" name="documento" id="documento" placeholder="Digita Documento" autocomplete="off" required>					
+					<button onclick="consultar();">Consultar</button>
+					<br style="clear:both;">
+				</form>
+				<div id="respuesta"></div>
+			</section>
+		</div>
+	</div>
+	<footer>Todos los drechos reservados, Jorge Luis Guaca</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Consulta | Usuarios</title>
+  <link rel="shortcut icon" href="../img/logo.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/inicio.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <link href="../grafica/tableExport/css/tableexport.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function() {       
+      setTimeout(function() {session();},2);});
+    </script> 
+  </head>
+
+  <body>
+    <!--Menu de navegación-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="inicio1.html">Panel de control</a></li>
+            <li><a href="usuarios1.html">Evaluadores</a></li>
+            <!--<li><a href="avance1.html">Avance</a></li>-->
+            <li><a href="../grafica/graficas.html">Graficas</a></li>
+            <li class="active"><a href="descargas.html">Descargas</a></li>
+            <li><a href="../php/cerrar_sesion.php">Salir</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!--header -->
+    <header id="header">
+      <header class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1 style="font-size: 20px;margin-top: 10px;">Panel de control | <span class="glyphicon glyphicon-user" area-hiden="true"></span><small> <span class ="nn">
+            </span></small></h1>
+          </div>
+        </div>
+      </header>
+    </header>
+    <!--Seccion principal-->
+    <main>
+      <section id="principal">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><span class="glyphicon glyphicon-user" area-hiden="true"></span> Evaluados</h3><br>                  
+                  <div class="btn-group  btn-group-justified">
+                    <a type="button" class="btn btn-default" onclick="descarga(1);" name="bton" style="font-size: 70%;">TACTICO</a>
+                    <a type="button" class="btn btn-default" onclick="descarga(2);" name="bton" style="font-size: 70%;">T. ESTRATEGICO</a>
+                    <a type="button" class="btn btn-default"onclick="descarga(3);" name="bton" style="font-size: 70%;">ESTRATEGICO</a>
+                    <a type="button" class="btn btn-default" onclick="descarga(4);" name="bton" style="font-size: 70%;">OPERATIVO</a>                    
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table id="datos" class="table table table-striped table-condensed">
+                      <tr>                    
+                      </tr>              
+                    </table>
+                  </div>         
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer id="footer">
+      <p>Derechos Registrados Consulta de panel jj, &copy; 2020</p>      
+    </footer>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="js1/inicio1.js"></script>
+
+      <!--TableExport-->
+      <script type="text/javascript" src="../grafica/tableExport/js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/Bootstrap/bootstrap.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/ZeroClipboard/ZeroClipboard.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/js-xlsx/xlsx.core.min.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/Blob.js/Blob.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/FileSaver.js/FileSaver.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/Export2Excel.js"></script>
+      <!--<script type="text/javascript" src="../grafica/tableExport/js/TableExport.js/jquery.tableexport.js"></script>-->
+      <script type="text/javascript" src="../grafica/tableExport/js/TableExport.js/jquery.tableexport.v2.js"></script>
+      <script type="text/javascript" src="../grafica/tableExport/js/main.js"></script>
+    </body>
+    </html>
+    
