@@ -1,0 +1,8 @@
+[01-Mar-2020 21:30:36 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/reporteEstrategico.php on line 43
+[01-Mar-2020 21:30:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file (output started at /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/reporteEstrategico.php:43)' in /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/fpdf.php:271
+Stack trace:
+#0 /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/fpdf.php(1049): FPDF->Error('Some data has a...')
+#1 /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/reporteEstrategico.php(720): FPDF->Output('ReporteEstrateg...', 'I')
+#3 {main}
+  thrown in /home1/estratco/mintrabajo.cifooiss.com/min_SegundaInstancia/proyecto/Pro_Encuesta/fpdf/fpdf.php on line 271

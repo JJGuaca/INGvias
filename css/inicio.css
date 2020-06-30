@@ -1,0 +1,150 @@
+/*Color Twvs*/
+
+.navbar-default {
+  background-color: #09507e;
+  border-color: #536e8b;
+}
+.navbar-default .navbar-brand {
+  color: #fbfbfb;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-text {
+  color: #fbfbfb;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fbfbfb;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fdfdfd;
+  background-color: #536e8b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fdfdfd;
+  background-color: #536e8b;
+}
+.navbar-default .navbar-toggle {
+  border-color: #536e8b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #536e8b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fbfbfb;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fbfbfb;
+}
+.navbar-default .navbar-link {
+  color: #fbfbfb;
+}
+.navbar-default .navbar-link:hover {
+  color: #fdfdfd;
+}
+
+/* Estilos personales*/
+body{
+    background: #f4f4f4;
+}
+h1 small{
+  color: #fff;
+}
+.navbar-brand>img {
+    display: block;
+    width: 80%;
+    height: 90%;
+}
+.navbar{
+    min-height: 33px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-nav > i > a, .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    height: 75px;
+}
+#header{
+    background-color: #257bb3;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.ppal, .panel-default > .panel-heading{
+    background-color: #09507e !important;
+    border-color: #09507e !important;
+    color: #fff !important;
+}
+.barra-progreso{
+    background-color: #b4b4b4;
+    color: #333;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
+    text-align: center;
+
+}
+#footer{
+    background-color: #777;
+    text-align: right;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.badge{
+  background-color: #54abf7;
+}
+.barra-progreso {
+    background-color: #7de07e;
+}
+.progress{
+  cursor: pointer;
+}
+.dash-box{
+  text-align: center;
+}
+.dash-box >a{
+  text-decoration: none;
+}
+label.form-check-label {
+    margin: 0% 6%;
+}
+button.btn.btn-primary.btn-block {
+    width: 25% !important;
+    margin: 0% 40%;
+}
+#pendientes {
+    background-color: #ff7777;
+}
+.navbar-nav {
+    padding-top: 10px;
+}
+
+
+/* Media querys tbswcolor*/
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fbfbfb;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fdfdfd;
+    background-color: #536e8b;
+  }
+}
